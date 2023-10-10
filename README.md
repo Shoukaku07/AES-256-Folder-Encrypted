@@ -36,17 +36,23 @@ It's important to note that while this code demonstrates basic file encryption a
 You can download the java file that I have provided. then place them in the respective java src, making sure to change the package according to your application.
 
 How to start encrypted?
-`FolderEncryptor.encryptFolder("/storage/emulated/0/Download", "MyPassword");`
+```java
+FolderEncryptor.encryptFolder("/storage/emulated/0/Download", "MyPassword");
+```
 Decrypted:
-`FolderEncryptor.decryptFolder("/storage/emulated/0/Download", "MyPassword");`
+```java
+FolderEncryptor.decryptFolder("/storage/emulated/0/Download", "MyPassword");
+```
 
 How to encrypt single file?
-`
+```java
 File fileToEncrypt = new File("/storage/emulated/0/MyFiles.txt");
 String encryptionPassword = "your_password_here";
-FolderEncryptor.encryptFile(fileToEncrypt, encryptionPassword);`
+FolderEncryptor.encryptFile(fileToEncrypt, encryptionPassword);
+```
 Decrypted:
-`
+```java
 File decryptFile = new File("/storage/emulated/0/MyFiles.txt");
 String decryptPassword = "your_password_here";
-FolderEncryptor.decryptFile(decryptFile, decryptPassword);`
+FolderEncryptor.decryptFile(decryptFile, decryptPassword);
+```
