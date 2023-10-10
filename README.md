@@ -1,4 +1,4 @@
-yuk# AES-256-Folder-Encrypted
+# AES-256-Folder-Encrypted
 The `FolderEncryptor` class in the provided code is a Java program for encrypting and decrypting files within a folder using the AES (Advanced Encryption Standard) algorithm with a specified password. Here's how it works:
 
 1. **Encryption Process:**
