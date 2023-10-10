@@ -1,4 +1,4 @@
-# AES-256-Folder-Encrypted
+yuk# AES-256-Folder-Encrypted
 The `FolderEncryptor` class in the provided code is a Java program for encrypting and decrypting files within a folder using the AES (Advanced Encryption Standard) algorithm with a specified password. Here's how it works:
 
 1. **Encryption Process:**
@@ -32,3 +32,21 @@ The `FolderEncryptor` class in the provided code is a Java program for encryptin
 It's important to note that while this code demonstrates basic file encryption and decryption, there are important security considerations to keep in mind when implementing encryption in a real-world application. For example, securely storing and managing encryption keys, handling exceptions, and ensuring data integrity. Additionally, AES-256 encryption is considered more secure than the 128-bit key used in this code.
 
 ## How to use it?
+
+You can download the java file that I have provided. then place them in the respective java src, making sure to change the package according to your application.
+
+How to start encrypted?
+`FolderEncryptor.encryptFolder("/storage/emulated/0/Download", "MyPassword");`
+Decrypted:
+`FolderEncryptor.decryptFolder("/storage/emulated/0/Download", "MyPassword");`
+
+How to encrypt single file?
+`
+File fileToEncrypt = new File("/storage/emulated/0/MyFiles.txt");
+String encryptionPassword = "your_password_here";
+FolderEncryptor.encryptFile(fileToEncrypt, encryptionPassword);`
+Decrypted:
+`
+File decryptFile = new File("/storage/emulated/0/MyFiles.txt");
+String decryptPassword = "your_password_here";
+FolderEncryptor.decryptFile(decryptFile, decryptPassword);`
