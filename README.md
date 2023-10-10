@@ -64,6 +64,8 @@ String decryptPassword = "your_password_here";
 FolderEncryptor.decryptFile(decryptFile, decryptPassword);
 ```
 
+note: You can `custom extension` after encryption is complete.
+
 ## Security Considerations
 
 While this code provides a basic example of file encryption and decryption, it is essential to consider additional security measures for real-world applications:
