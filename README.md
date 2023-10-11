@@ -43,6 +43,7 @@ FolderEncryptor operates as follows:
 You can download the java file that I have provided. then place them in the respective java src, making sure to change the package according to your application.
 
 How to start encrypted?
+Encrypted folder containing files:
 ```java
 FolderEncryptor.encryptFolder("/storage/emulated/0/Download", "MyPassword");
 ```
@@ -51,7 +52,7 @@ Decrypted:
 FolderEncryptor.decryptFolder("/storage/emulated/0/Download", "MyPassword");
 ```
 
-How to encrypt single file?
+How to encrypt 1 file?
 ```java
 File fileToEncrypt = new File("/storage/emulated/0/MyFiles.txt");
 String encryptionPassword = "your_password_here";
@@ -64,7 +65,7 @@ String decryptPassword = "your_password_here";
 FolderEncryptor.decryptFile(decryptFile, decryptPassword);
 ```
 
-note: You can `custom extension` after encryption is complete.
+note: You can `custom extension`
 
 ## Security Considerations
 
