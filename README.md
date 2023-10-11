@@ -70,6 +70,47 @@ FolderEncryptor.decryptFile(decryptFile, decryptPassword);
 
 note: You can `custom extension`
 
+### AES custom bit
+
+AES-128:
+```java
+    private static Key generateKey(String password) { 
+         try { 
+             byte[] passwordBytes = Arrays.copyOf(password.getBytes(StandardCharsets.UTF_8), 16); 
+             return new SecretKeySpec(passwordBytes, ALGORITHM); 
+         } catch (Exception e) { 
+             e.printStackTrace(); 
+         } 
+         return null; 
+     }
+```
+
+AES-192:
+```java
+    private static Key generateKey(String password) { 
+         try { 
+             byte[] passwordBytes = Arrays.copyOf(password.getBytes(StandardCharsets.UTF_8), 24); 
+             return new SecretKeySpec(passwordBytes, ALGORITHM); 
+         } catch (Exception e) { 
+             e.printStackTrace(); 
+         } 
+         return null; 
+     }
+```
+
+AES-256:
+```java
+    private static Key generateKey(String password) { 
+         try { 
+             byte[] passwordBytes = Arrays.copyOf(password.getBytes(StandardCharsets.UTF_8), 32); 
+             return new SecretKeySpec(passwordBytes, ALGORITHM); 
+         } catch (Exception e) { 
+             e.printStackTrace(); 
+         } 
+         return null; 
+     }
+```
+
 ## Security Considerations
 
 While this code provides a basic example of file encryption and decryption, it is essential to consider additional security measures for real-world applications:
