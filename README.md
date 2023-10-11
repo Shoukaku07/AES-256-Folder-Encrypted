@@ -40,7 +40,8 @@ FolderEncryptor operates as follows:
 
 ## How to use it?
 
-You can download the java file that I have provided. then place them in the respective java src, making sure to change the package according to your application.
+You can download the java file that I have provided. then place them in the respective java src, making sure to change the package according to your application,
+Use `compileSdkVersion 32` in build.gradle.
 
 How to start encrypted?
 
