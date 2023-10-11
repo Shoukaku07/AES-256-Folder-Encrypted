@@ -43,6 +43,7 @@ FolderEncryptor operates as follows:
 You can download the java file that I have provided. then place them in the respective java src, making sure to change the package according to your application.
 
 How to start encrypted?
+
 Encrypted folder containing files:
 ```java
 FolderEncryptor.encryptFolder("/storage/emulated/0/Download", "MyPassword");
