@@ -110,7 +110,7 @@ public class FolderEncryptor {
 
     private static Key generateKey(String password) {
         try {
-            byte[] passwordBytes = Arrays.copyOf(password.getBytes(StandardCharsets.UTF_8), 16);
+            byte[] passwordBytes = Arrays.copyOf(password.getBytes(StandardCharsets.UTF_8), 32);
             return new SecretKeySpec(passwordBytes, ALGORITHM);
         } catch (Exception e) {
             e.printStackTrace();
