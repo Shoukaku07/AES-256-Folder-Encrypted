@@ -46,11 +46,13 @@ How to start encrypted?
 
 Encrypted folder containing files:
 ```java
-FolderEncryptor.encryptFolder("/storage/emulated/0/Download", "MyPassword");
+File folderToEncrypt = new File("/storage/emulated/0/MyFolder");
+FolderEncryptor.encryptFolder(folderToEncrypt, "MyPassword");
 ```
 Decrypted:
 ```java
-FolderEncryptor.decryptFolder("/storage/emulated/0/Download", "MyPassword");
+File folderToDecrypt = new File("/storage/emulated/0/MyFolder");
+FolderEncryptor.decryptFolder(folderToDecrypt, "MyPassword");
 ```
 
 How to encrypt 1 file?
